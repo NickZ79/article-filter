@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Article Filter · Native DOM Component</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#articles">Skip to articles</a>
+
+    <header class="site-header">
+      <div class="wrap">
+        <p class="eyebrow">Native DOM component</p>
+        <h1>Article Filter</h1>
+        <p class="lede">A searchable, filterable article list built with plain JavaScript, semantic HTML, and modern CSS. No framework, no build step.</p>
+      </div>
+    </header>
+
+    <main class="wrap">
+      <section class="article-filter" data-article-filter data-source="articles.json" aria-labelledby="browse-heading">
+        <h2 id="browse-heading">Browse articles</h2>
+
+        <form class="filter-controls" data-filter-form role="search" aria-label="Filter articles">
+          <div class="field">
+            <label for="filter-search">Search titles and summaries</label>
+            <input id="filter-search" type="search" name="q" autocomplete="off" spellcheck="false" data-filter-search>
+          </div>
+
+          <fieldset class="chips" data-filter-categories>
+            <legend>Category</legend>
+            <!-- Category radios are generated from the data. -->
+          </fieldset>
+
+          <button type="reset" class="button-secondary">Clear filters</button>
+        </form>
+
+        <p class="status" role="status" data-filter-status></p>
+
+        <ul class="card-grid" id="articles" data-filter-list aria-labelledby="browse-heading"></ul>
+
+        <noscript>
+          <p class="empty-state">This article list needs JavaScript to load.</p>
+        </noscript>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "title": "Building Accessible Tab Panels Without a Framework",
+    "summary": "Roving tabindex, arrow-key navigation, and the ARIA roles that make a tab widget usable with a keyboard and a screen reader.",
+    "category": "Accessibility",
+    "date": "2026-09-18"
+  },
+  {
+    "id": 2,
+    "title": "CSS Grid Layouts That Survive Real Content",
+    "summary": "Using auto-fill, minmax, and intrinsic sizing so a card grid holds up when headlines run long or images go missing.",
+    "category": "CSS",
+    "date": "2026-09-10"
+  },
+  {
+    "id": 3,
+    "title": "Custom Properties as a Design System",
+    "summary": "Turning a brand palette into CSS tokens, and swapping them for dark mode without touching a single component rule.",
+    "category": "CSS",
+    "date": "2026-08-27"
+  },
+  {
+    "id": 4,
+    "title": "Debouncing Search Input the Simple Way",
+    "summary": "A ten-line debounce helper, when to reach for it, and why filtering on every keystroke can make a page feel slower.",
+    "category": "JavaScript",
+    "date": "2026-08-19"
+  },
+  {
+    "id": 5,
+    "title": "Why Your Live Region Isn't Announcing",
+    "summary": "Common reasons aria-live updates go silent, and how to structure a status message that screen readers actually read.",
+    "category": "Accessibility",
+    "date": "2026-08-05"
+  },
+  {
+    "id": 6,
+    "title": "Cutting Largest Contentful Paint on a News Homepage",
+    "summary": "Preloading the hero image, trimming render-blocking CSS, and measuring the difference with real user data.",
+    "category": "Performance",
+    "date": "2026-07-22"
+  },
+  {
+    "id": 7,
+    "title": "Registering Block Patterns in a WordPress Theme",
+    "summary": "Giving editors reusable layouts in the block editor, with patterns registered from theme files instead of the database.",
+    "category": "WordPress",
+    "date": "2026-07-09"
+  },
+  {
+    "id": 8,
+    "title": "Event Delegation for Dynamic Lists",
+    "summary": "One listener on a parent element instead of hundreds on children, and how it keeps working when items are re-rendered.",
+    "category": "JavaScript",
+    "date": "2026-06-24"
+  },
+  {
+    "id": 9,
+    "title": "Fetching Data With AbortController",
+    "summary": "Cancelling stale requests so a slow response can't overwrite newer results, plus handling the AbortError cleanly.",
+    "category": "JavaScript",
+    "date": "2026-06-11"
+  },
+  {
+    "id": 10,
+    "title": "Lazy Loading Images Without Layout Shift",
+    "summary": "Native loading attributes, explicit dimensions, and aspect-ratio working together to keep a page from jumping around.",
+    "category": "Performance",
+    "date": "2026-05-28"
+  },
+  {
+    "id": 11,
+    "title": "Escaping Output in PHP Templates",
+    "summary": "Where esc_html, esc_attr, and esc_url belong in a WordPress template, and what happens when one is left out.",
+    "category": "WordPress",
+    "date": "2026-05-14"
+  },
+  {
+    "id": 12,
+    "title": "Testing Focus Order Across Browsers",
+    "summary": "A repeatable keyboard-only checklist for catching focus traps and skipped controls before a release goes out.",
+    "category": "Accessibility",
+    "date": "2026-04-30"
+  }
+]
