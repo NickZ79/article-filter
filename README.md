@@ -2,6 +2,8 @@
 
 A searchable, filterable article list built with native DOM APIs, semantic HTML, and modern CSS. No framework, no dependencies, no build step.
 
+**Live demo:** https://nickz79.github.io/article-filter/
+
 ## Run it
 
 The component loads its data with `fetch`, so it needs to be served over HTTP rather than opened as a file:

@@ -46,11 +46,13 @@ export class ArticleFilter {
 
     // Debounce typing so we re-render once the user pauses, not on every key.
     this.handleSearchInput = debounce(this.handleSearchInput.bind(this), DEBOUNCE_MS);
+
+    // Bind once here rather than in init(), which runs again on retry.
+    this.bindEvents();
   }
 
   async init() {
     this.readStateFromUrl();
-    this.bindEvents();
     this.setBusy(true);
     this.setStatus('Loading articles…');
 
