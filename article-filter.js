@@ -314,13 +314,21 @@ export class ArticleFilter {
 
 /* ---------- Helpers ---------- */
 
-function normalizeArticle(raw) {
+function normalizeArticle(raw, index) {
   if (!raw || typeof raw.title !== 'string' || typeof raw.date !== 'string') return null;
   const date = new Date(raw.date);
   if (Number.isNaN(date.getTime())) return null;
 
+  // Optional fields may be missing, but if present they must be text:
+  // filtering calls toLowerCase() on them and sorting calls localeCompare().
+  const optional = [raw.summary, raw.category];
+  if (optional.some((value) => value != null && typeof value !== 'string')) return null;
+
   return {
-    id: String(raw.id),
+    // Card headings get an HTML id for aria-labelledby, so it must be unique
+    // and contain no spaces. The record's position guarantees both, which
+    // the data's own id field can't.
+    id: String(index),
     title: raw.title,
     summary: raw.summary ?? '',
     category: raw.category ?? 'Uncategorized',
