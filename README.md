@@ -1,4 +1,4 @@
-﻿# Article Filter
+# Article Filter
 
 A searchable, filterable article list built with native DOM APIs, semantic HTML, and modern CSS. No framework, no dependencies, no build step.
 
